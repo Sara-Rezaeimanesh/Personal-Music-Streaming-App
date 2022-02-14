@@ -1,0 +1,13 @@
+	</tbody>
+</table>
+<h1>Options</h1><div class="container group">
+<div class="grid-1-5"><a href="/manage_pls"><span dir="rtl" >Mange Playlists</span></a></div>
+<div class="grid-1-5"><a href="/all_pls"><span dir="rtl" >All Playlists</span></a></div></div>
+<div class="container group"><div class="grid-1-5"><a href="/add_filters"><span dir="rtl" >Add Filters</span></a></div>
+<div class="grid-1-5"><a href="/delete_filters"><span dir="rtl" >Delete Filters</span></a></div>
+<form action="/" method="get">
+	<div style = "position:absolute; left:100px; top:3000px;">
+		<button type="submit">Logout</button><br/>
+	</div>
+</form>
+</html>

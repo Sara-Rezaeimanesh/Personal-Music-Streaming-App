@@ -1,0 +1,56 @@
+<!DOCTYPE html><html>
+<head>
+    <title>Utunes_signup</title>
+    <link rel="shortcut icon" type="image/jpg" href="https://www.pikpng.com/pngl/m/452-4525435_pi-music-player-mp3-pi-music-player-icon.png"/>
+</head>
+ <h1 class="title">
+                  <div style = "position:absolute; left:300px; top:200px;">
+                  <span dir="rtl" style="color:white;">Signup to Utunes</span>
+                  </div>
+                </h1>
+<body class="signup" > 
+<style>
+body {
+	background-image: url('https://i.pinimg.com/originals/cc/d2/96/ccd2965fda1b5090f7500d7753040296.jpg');
+}
+</style>
+<style>
+  a {
+    text-decoration: none;
+    color: #D24D57;
+  }
+  a:visited {
+    color: #D24D57;
+  }
+</style>
+  <form action="/signup" method="get">
+  <div style = "position:absolute; left:300px; top:258px;">
+  <label for="username" style="color:white;">Username:</label>
+  </div>
+  <div style = "position:absolute; left:395px; top:250px;">
+  <input name="Username" type="text" placeholder="username" required/><br/>
+  </div>
+  <div style = "position:absolute; left:300px; top:308px;">
+  <label for="Email" style="color:white;">Email:</label>
+  </div>
+  <div style = "position:absolute; left:395px; top:300px;">
+  <input name="Email" type="email" placeholder="email_addr" required/><br/>
+  </div>
+  <div style = "position:absolute; left:300px; top:358px;">
+  <label for="password" style="color:white;">Password:</label>
+  </div>
+  <div style = "position:absolute; left:395px; top:350px;">
+  <input type="password" id="password" name="password" value="" placeholder="password" required/><span id="capslock-on" style="display:none;" >
+  </span><br/>
+  </div>
+<div style = "position:absolute; left:300px; top:400px;">
+<button type="submit">Signup</button><br/>
+</div>
+<div style = "position:absolute; left:300px; top:450px;">
+<span dir="rtl" style="color:white;">?Already signed up</span>
+<a href="/show_login" target="_parent" dideo-checked="true"><span dir="rtl" >Login</span></a>
+</div>
+</form>
+
+</body>
+</html>

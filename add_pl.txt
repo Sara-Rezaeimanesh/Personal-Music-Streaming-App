@@ -1,0 +1,143 @@
+<!DOCTYPE html><html>
+<style>
+.fade-in {
+  animation: fadeIn ease 5s;
+  -webkit-animation: fadeIn ease 5s;
+  -moz-animation: fadeIn ease 5s;
+  -o-animation: fadeIn ease 5s;
+  -ms-animation: fadeIn ease 5s;
+}@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+}
+</style>
+<div class="fade-in">
+<head>
+    <title>Utunes: Add playlist</title>
+</head>
+ <h1 class="title">
+                  <div style = "position:absolute; left:300px; top:238px;">
+                  <span dir="rtl" style="color:#D24D57;">Add a Playlist</span>
+                  </div>
+                </h1>
+<body class="add" >
+<style>
+body {
+  background-image: url('https://i.pinimg.com/originals/cc/d2/96/ccd2965fda1b5090f7500d7753040296.jpg');
+}
+</style>
+<style>
+button.animated-button:after {
+  content: "";
+  position: absolute;
+  height: 0%;
+  left: 50%;
+  top: 50%;
+  width: 20%;
+  z-index: -1;
+  -webkit-transition: all 0.75s ease 0s;
+  -moz-transition: all 0.75s ease 0s;
+  -o-transition: all 0.75s ease 0s;
+  transition: all 0.75s ease 0s;
+}
+button.animated-button:hover {
+  color: #FFF;
+  text-shadow: none;
+}
+button.animated-button:hover:after, button.animated-button:hover:after {
+  height: 60%;
+}
+button.animated-button {
+  position: relative;
+  margin: 10px 10px;
+  padding: 5px 50px;
+  color: #D24D57;
+  font-size:13px;
+  border-radius: 0;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  letter-spacing: .08em;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+button.animated-button.victoria-four {
+  border: 2px solid #D24D57;
+}
+button.animated-button.victoria-four:after {
+  background: #D24D57;
+  opacity: .5;
+  -moz-transform: translateY(-50%) translateX(-50%) rotate(100deg);
+  -ms-transform: translateY(-50%) translateX(-50%) rotate(90deg);
+  -webkit-transform: translateY(-50%) translateX(-50%) rotate(90deg);
+  transform: translateY(-50%) translateX(-50%) rotate(90deg);
+}
+button.animated-button.victoria-four:hover:after {
+  opacity: 1;
+  height: 520% !important;
+}
+</style>
+<body class="signup" >
+  <form action="/add_playlist" method="get">
+  <div style = "position:absolute; left:300px; top:308px;">
+  <label for="Name" style="color:white;">Name:</label>
+  </div>
+  <div style = "position:absolute; left:395px; top:300px;">
+  <input name="Name" type="text" placeholder="playlist name" required/><br/>
+  </div>
+  <div style = "position:absolute; left:300px; top:358px;">
+  <label for="Privacy" style="color:white;">Privacy:</label>
+  </div>
+  <div style = "position:absolute; left:395px; top:350px;">
+  <input type="text" id="Privacy" name="Privacy" placeholder="privacy" required/><br/>
+  </div>
+  <div style = "position:relative; left:280px; top:380px;">
+  <div class="col-md-3 col-sm-3 col-xs-6"><button type="submit "class="btn btn-sm animated-button victoria-four">Add</button></div>
+  </div>
+  </form>
+  </body>
+ </html>

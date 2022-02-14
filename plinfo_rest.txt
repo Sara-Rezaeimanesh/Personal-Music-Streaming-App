@@ -1,0 +1,9 @@
+</tbody></table>
+<div><div style = "position:relative; left:130px; top:100px" >
+<a href="/add_pl"><p><span class="bg"></span><span class="base">
+</span><span class="text">Add Playlist</span></p></a></div></div></div>
+<form action="/homepage" method="get"><div style = "position:absolute; left:70px; top:800px;">
+<button type=\"submit\">Home</button><br/>
+</div>
+</form>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html><html>
+<style>
+.fade-in {
+  animation: fadeIn ease 5s;
+  -webkit-animation: fadeIn ease 5s;
+  -moz-animation: fadeIn ease 5s;
+  -o-animation: fadeIn ease 5s;
+  -ms-animation: fadeIn ease 5s;
+}@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+}
+</style>
+<div class="fade-in">
+<head>
+    <title>Utunes: add_song</title>
+</head>
+ <h1 class="title">
+                  <div style = "position:absolute; left:300px; top:258px;">
+                  <span dir="rtl" style="color:#D24D57">Add Song</span>
+                  </div>
+                </h1>
+<body class="signup" >
+<style>
+body {
+	background-image: url('https://i.pinimg.com/originals/cc/d2/96/ccd2965fda1b5090f7500d7753040296.jpg');
+}
+</style>
+<p></p>
+ <form action="/add_to_pl" method="get">
+  <div style = "position:absolute; left:300px; top:328px;">
+  <label for="sid" style="color:white;">Id:</label>
+  </div>
+  <div style = "position:absolute; left:345px; top:320px;">
+  <input name="sid" type="number" placeholder="song id" min = "1" max = "33" message="ids range from 1 to 33" required/><br/>
+  </div>
+<div style = "position:absolute; left:300px; top:380px;">
+<button type="submit">Add Song</button><br/>
+</div>
+</form>
+</body>
+</div>
+</html>

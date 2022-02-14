@@ -1,0 +1,6 @@
+</div><form action="/" method="get"><div style = "position:absolute; left:100px; top:1200px;">
+<button type="submit">Logout</button><br/></div></form><form action="/homepage" method="get"><div style = "position:absolute; left:300px; top:1200px;">
+<button type="submit">Home</button><br/>
+</div>
+</form>
+</html>

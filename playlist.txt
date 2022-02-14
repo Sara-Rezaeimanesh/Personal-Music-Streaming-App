@@ -1,0 +1,304 @@
+<DOCTYPE! html>
+<html>
+<style>
+
+
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  line-height: 1em;
+  color:#A7A1AE;
+  background-color: rgb(33,31,35);
+}
+
+h1 {
+  font-size:3em; 
+  font-weight: 300;
+  line-height:1em;
+  text-align: center;
+  color: #4DC3FA;
+}
+
+h2 {
+  font-size:1em; 
+  text-transform: uppercase;
+  font-weight: 300;
+  text-align: center;
+  display: block;
+  line-height:1em;
+  padding-bottom: 0em;
+  color: #FB667A;
+}
+
+h2 a {
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #FB667A;
+  text-decoration: none;
+}
+
+.blue { color: #185875; }
+.yellow { color: #FFF842; }
+
+.container th h1 {
+	  font-weight: bold;
+	  font-size: 1em;
+  text-align: left;
+  color: #185875;
+}
+
+.container td {
+	  font-weight: normal;
+	  font-size: 1em;
+  -webkit-box-shadow: 0 2px 2px -2px #0E1119;
+	   -moz-box-shadow: 0 2px 2px -2px #0E1119;
+	        box-shadow: 0 2px 2px -2px #0E1119;
+}
+
+.container {
+	  text-align: left;
+	  overflow: hidden;
+	  width: 80%;
+	  margin: 0 auto;
+  display: table;
+  padding: 0 0 0 0;
+}
+
+.container td, .container th {
+	  padding-bottom: 2%;
+	  padding-top: 2%;
+  padding-left: 1%; 
+
+}
+
+.container tr:nth-child(odd) {
+	  background-color: #323C50;
+}
+
+.container tr:nth-child(even) {
+	  background-color: #2C3446;
+}
+
+.container th {
+	  background-color: #1F2739;
+}
+
+.container td:first-child { color: #FB667A; }
+
+
+@media (max-width: 800px) {
+.container td:nth-child(6),
+.container th:nth-child(6) { display: none; }
+}
+
+.container tr:hover {
+   background-color: #464A52;
+-webkit-box-shadow: 0 6px 6px -6px #0E1119;
+	   -moz-box-shadow: 0 6px 6px -6px #0E1119;
+	        box-shadow: 0 6px 6px -6px #0E1119;
+}
+
+.container td:hover {
+  background-color: #FFF842;
+  color: #403E10;
+  transform: translate3d(0, 0, 0);
+  
+  transition-delay: 0s;
+	  transition-duration: 0.4s;
+	  transition-property: all;
+  transition-timing-function: line;
+}
+
+.container a:hover {
+  color: #403E10;
+  transform: translate3d(0, 0, 0);
+  
+  transition-delay: 0s;
+	  transition-duration: 0.4s;
+	  transition-property: all;
+  transition-timing-function: line;
+}
+button {
+  background-color: #9c83aa;
+  border-radius: 200px;
+  color: #fff;
+  font-size: 1em;
+  font-weight: 700;
+  position: relative;
+  bottom: 3.25em;
+  left: 50%;
+  margin-left: 0px;
+  text-decoration: none;
+  width: 120px;
+}
+
+</style>
+<head>
+  <style>
+
+a:link {
+  text-decoration: none;
+  color: #FB667A;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #FB667A;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #FB667A;
+}
+
+a:active {
+  text-decoration: none;
+  color: #FB667A;
+}
+  </style>
+</head>
+<style>
+body {
+  background: #0f1923;
+}
+
+div {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+}
+div a {
+  width: 100%;
+  max-width: 240px;
+  height: 54px;
+  padding: 8px;
+  font-size: 0.8rem;
+  font-weight: 900;
+  color: #ff4655;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  box-shadow: 0 0 0 1px inset rgba(236, 232, 225, 0.3);
+  margin: 10px 0;
+}
+div a.white:hover > p {
+  color: #ece8e1;
+}
+div a.white > p {
+  background: #ece8e1;
+  color: #0f1923;
+}
+div a.white > p span.base {
+  border: 1px solid transparent;
+}
+div a.transparent:hover > p {
+  color: #ece8e1;
+}
+div a.transparent:hover > p span.text {
+  box-shadow: 0 0 0 1px #ece8e1;
+}
+div a.transparent > p {
+  background: #0f1923;
+  color: #ece8e1;
+}
+div a.transparent > p span.base {
+  border: 1px solid #ece8e1;
+}
+div a:after, div a:before {
+  content: "";
+  width: 1px;
+  position: absolute;
+  height: 8px;
+  background: #0f1923;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+div a:before {
+  right: 0;
+  left: initial;
+}
+div a p {
+  margin: 0;
+  height: 54px;
+  line-height: 54px;
+  box-sizing: border-box;
+  z-index: 1;
+  left: 0;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+div a p span.base {
+  box-sizing: border-box;
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  border: 1px solid #ff4655;
+}
+div a p span.base:before {
+  content: "";
+  width: 2px;
+  height: 2px;
+  left: -1px;
+  top: -1px;
+  background: #0f1923;
+  position: absolute;
+  transition: 0.3s ease-out all;
+}
+div a p span.bg {
+  left: -5%;
+  position: absolute;
+  background: #ff4655;
+  width: 0;
+  height: 100%;
+  z-index: 3;
+  transition: 0.3s ease-out all;
+  transform: skewX(-10deg);
+}
+div a p span.text {
+  z-index: 4;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+div a p span.text:after {
+  content: "";
+  width: 4px;
+  height: 4px;
+  right: 0;
+  bottom: 0;
+  background: #0f1923;
+  position: absolute;
+  transition: 0.3s ease-out all;
+  z-index: 5;
+}
+div a:hover {
+  color: #ece8e1;
+}
+div a:hover span.bg {
+  width: 110%;
+}
+div a:hover span.text:after {
+  background: #ece8e1;
+}
+</style>
+
+<table class="container">
+
+	<h1><span class="blue"><span class="yellow">Choose Your Playlist!</pan></h1>
+	<h2>choose a playlist to view songs</h2>
+	<thead>
+		<tr>
+			<th><h1>Name</h1></th>
+			<th><h1>Privacy</h1></th>
+		</tr>
+	</thead>
+	<tbody>

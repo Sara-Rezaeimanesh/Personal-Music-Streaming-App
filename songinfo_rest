@@ -1,0 +1,8 @@
+</div></div><div style = "position:absolute; left:140px; top:550px;"><h1>Recommended For You</h1></div>
+<table class="container"><thead><tr><th><h1>Title</h1></th><th><h1>Artist</h1></th><th><h1>Release Year</h1></th></tr></thead><tbody>
+<%
+ utunes->get_recommended(5)
+%>
+</div><form action="/" method="get"><div style = "position:absolute; left:100px; top:1200px;">
+<button type="submit">Logout</button><br/></div></form><form action="/homepage" method="get"><div style = "position:absolute; left:300px; top:1200px;">
+<button type="submit">Home</button><br/></div></form></html>
